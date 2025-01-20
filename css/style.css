@@ -1,0 +1,248 @@
+/* Container */
+.container {
+    display: flex;
+    width: 100%;
+    /* Full width of the viewport */
+    height: 100vh;
+    /* Full height of the viewport */
+    flex-wrap: nowrap;
+    /* Prevent wrapping on larger screens */
+    margin-left: 10px;
+}
+
+/* Login Details Section */
+.logindetail {
+    width: 70%;
+    /* Default width for larger screens */
+    background-color: #ce8f73;
+    height: 100%;
+    /* Full height of the screen */
+    padding: 45px;
+    box-sizing: border-box;
+    /* display: flex; */
+    flex-direction: column;
+    /* Stack content vertically */
+    justify-content: center;
+    /* Center content vertically */
+}
+
+/* Image Section */
+.image {
+    width: 40%;
+    /* Default width for larger screens */
+    height: 100%;
+    /* Full height of the screen */
+    justify-content: center;
+    /* Center image horizontally */
+    align-items: center;
+    /* Center image vertically */
+    background-color: #f0f0f0;
+    /* Optional: background color for contrast */
+}
+
+.image img {
+    max-width: 100%;
+    /* Scale image proportionally */
+    max-height: 100%;
+    /* Ensure image doesn't overflow the container */
+    object-fit: cover;
+    /* Maintain aspect ratio and fill the container */
+}
+
+/* Heading */
+h1 {
+    padding: 20px;
+    font-size: 2.5em;
+    /* Larger font for desktops */
+    text-align: left;
+    margin-left: -30px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    font-family: Verdana;
+    padding: 15px;
+    margin: 8px 0;
+    width: 100%;
+    /* Full width of the container */
+    background-color: #d9d9d9;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Checkbox and Label */
+input[type="checkbox"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    accent-color: #725346;
+    /* Styled checkbox */
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.checkbox-label {
+    color: #553a2f;
+    font-family: Verdana;
+    font-size: 14px;
+    margin-right: auto;
+}
+
+/* Login Button */
+#loginbtn {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    background-color: #725346;
+    font-size: 22px;
+    font-family: Verdana;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Forgot Password */
+#forgotpass {
+    text-decoration: none;
+    color: #553a2f;
+    font-family: Geneva;
+    display: block;
+    text-align: end;
+    margin-top: -20px;
+}
+
+/* No Account and Create Account */
+#noaccount {
+    color: #573525;
+    font-family: Verdana;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#createaccount {
+    color: green;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* Responsive Design */
+
+/* For Tablets and Smaller Laptops */
+@media (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+        /* Stack elements vertically */
+        height: auto;
+        /* Allow height to adjust dynamically */
+    }
+
+    .logindetail,
+    .image {
+        width: 100%;
+        /* Full width for each section */
+        height: auto;
+        /* Adjust height dynamically */
+    }
+
+    .logindetail {
+        padding: 20px;
+        /* Adjust padding */
+    }
+
+    h1 {
+        font-size: 2em;
+        /* Smaller font size */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 16px;
+        /* Adjust input font size */
+    }
+
+    #loginbtn {
+        font-size: 18px;
+        /* Adjust button font size */
+    }
+
+    .image img {
+        max-width: 90%;
+        /* Adjust image scaling */
+        margin: 0 auto;
+        /* Center image */
+    }
+
+    #forgotpass {
+        margin-top: 10px;
+        /* Add spacing between elements */
+        text-align: left;
+        /* Align text to the left */
+        margin-left: 0;
+        /* Remove any left margin */
+    }
+
+    /* For Mobile Devices */
+    @media (max-width: 480px) {
+        .container {
+            flex-direction: column;
+            /* Stack content vertically */
+            height: auto;
+            /* Allow height to adjust dynamically */
+        }
+
+        .logindetail,
+        .image {
+            width: 100%;
+            /* Full width for each section */
+            height: auto;
+            /* Adjust height dynamically */
+        }
+
+        .logindetail {
+            padding: 15px;
+            /* Smaller padding for mobile */
+        }
+
+        h1 {
+            font-size: 1.5em;
+            /* Smaller font size */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            font-size: 14px;
+            /* Adjust font size */
+            padding: 10px;
+        }
+
+        #loginbtn {
+            font-size: 16px;
+            /* Adjust button font size */
+            padding: 10px;
+        }
+
+        .checkbox-label {
+            font-size: 12px;
+            /* Smaller font size for checkbox label */
+        }
+
+        .image img {
+            max-width: 80%;
+            /* Scale image for smaller screens */
+        }
+
+        #forgotpass {
+            margin-top: 10px;
+            /* Add spacing between elements */
+            text-align: left;
+            /* Align text to the left */
+            margin-left: 0;
+            /* Remove any left margin */
+
+        }
+    }
+}
