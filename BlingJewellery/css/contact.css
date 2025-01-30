@@ -1,0 +1,132 @@
+.content-wrap{
+    position: relative;
+    flex-wrap: wrap;
+}
+.contact-left {
+    flex: 1; /* Allow content to take up available space */
+    padding-left: 3vw; /* Use relative unit for padding */
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    max-width: 40%;
+}
+.contact-right{
+    background-color: #faf5f0;
+    position: absolute;
+    top:-20%;
+    left: 50%;
+    height: auto;
+    width:35%;
+    padding: 40px;
+    max-width: 50%;
+}
+.contact-right input[type="text"]{
+    width: 45.7%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+.contact-right input[type="email"],
+.contact-right textarea {
+    width: 95%; /* Full width for inputs */
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+.contact-right textarea{
+    padding-bottom: 100px;
+}
+.contact-right input[type="submit"] {
+    background-color: #faf5f0;
+    color: black;
+    border:1px solid black;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1.5rem;
+    width: 120px;
+    margin-top: 10px;
+}
+.map-container {
+    margin-top: 170px;
+    width: 100%; /* Full width of the viewport */
+    height: 80vh; /* Full height of the viewport */
+    position: relative;
+}
+
+.map-container iframe {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: 0; /* Remove border */
+}
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .contact-right {
+        left: 50%;
+        width: 40%;
+        top: -10%;
+    }
+
+    .contact-right input[type="text"] {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .content-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left {
+        font-size: 1.1rem;
+        padding: 2vw;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .contact-right {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 80%;
+        margin: 20px auto;
+        max-width: 100%;
+    }
+
+    .contact-right input[type="email"],
+    .contact-right textarea,
+    .contact-right input[type="text"] {
+        width: 100%;
+    }
+
+    .contact-right input[type="submit"] {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .map-container{
+        margin-top:0%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-left {
+        font-size: 1rem;
+    }
+
+    .contact-right {
+        padding: 5px 40px;
+    }
+
+    .contact-right input[type="text"],
+    .contact-right input[type="email"],
+    .contact-right textarea {
+        font-size: 1.2rem;
+    }
+
+    .contact-right input[type="submit"] {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

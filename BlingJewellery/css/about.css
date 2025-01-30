@@ -1,0 +1,214 @@
+#display {
+    width: 100%;
+    height: auto;
+}
+.imgcontent {
+    position: relative;
+}
+.elementselect {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 30%;
+    left:40%;
+    bottom: 40%;
+    display: flex;
+    color: white;
+    padding: 20px;
+}
+.elementselect p {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0%;
+    color: #fff;
+}
+
+.elementselect h1 {
+    font-size: 5.5rem;
+    padding: 0%;
+    margin: 10px 0 0;
+}
+
+/* Main wrapper for content and background images */
+.content-wrap {
+    display: flex; /* Use Flexbox to place content side by side */
+    justify-content: flex-start; /* Align content and images to the left */
+    width: 100%;
+    padding: 20px; /* Optional: Add some space around the container */
+    box-sizing: border-box; /* Include padding in the total width calculation */
+}
+
+/* Content on the left side */
+.content-left {
+    flex: 1; /* Allow content to take up available space */
+    padding-left: 3vw; /* Use relative unit for padding */
+    box-sizing: border-box;
+}
+#content-p1{
+    font-size: 1vw;
+    font-family: Cambria;
+}
+#text{
+    font-size: 6vh;
+    margin-top:0% ;
+}
+#content-text{
+    margin-top: -20px;
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.763);
+}
+#about-text{ 
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.562);
+}
+#aboutus{ 
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.562);
+}
+/* Container for the images */
+.bg-container {
+    height: auto;
+    display: flex;
+    justify-content: flex-end; /* Align images to the right */
+    align-items: center; /* Center the images vertically */
+    width: 100%; /* Allow the container to take up full width */
+    max-width: 70%; /* Max width of the image container */
+    flex-shrink: 0; /* Prevent the container from shrinking */
+    box-sizing: border-box;
+    padding-right: 110px;
+    padding-top: 100px;
+
+}
+#bg-img-container {
+    width: 100%;
+    padding: 30px 30px;
+}
+#bg-img {
+    width:100%;
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes inline spacing below the image */
+}
+.content-wrap {
+    display: flex; /* Use Flexbox to place content side by side */
+    justify-content: flex-start; /* Align content and images to the left */
+    width: 100%;
+    padding: 20px; /* Optional: Add some space around the container */
+}
+.about-left {
+    flex: 2; /* Allow content to take up available space */
+    padding-left: 3vw; /* Use relative unit for padding */
+    font-size: 2vw;
+    padding-top: 0%;
+}
+.about-right{
+    flex: 3; /* Allow content to take up available space */
+    padding-left: 3vw; /* Use relative unit for padding */
+}
+.about-right p{
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.692);
+}
+
+@media (max-width: 768px) {
+    @media (max-width: 768px) {
+        /* For #display, take the full width and auto height */
+        #display {
+            width: 100%;
+            height: auto;
+        }
+    
+        /* Adjust .imgcontent to take full width without flex properties */
+        .imgcontent {
+            position: relative;
+            width: 100%;
+        }
+    
+        /* Adjust .elementselect to ensure it aligns well on smaller screens */
+        .elementselect {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            top: 20%;  /* Adjust top to fit better */
+            left: 10%;
+            right: 10%;
+            bottom: 30%;
+            display: block;  /* Use block layout for smaller screens */
+            color: white;
+            padding: 10px;  /* Adjust padding */
+            text-align: center; /* Ensure text is centered */
+        }
+    
+        /* Adjust heading and paragraph sizes */
+        .elementselect p {
+            font-size: 1rem; /* Reduce font size */
+            margin: 0;
+            padding: 0;
+            word-wrap: break-word;
+        }
+    
+        .elementselect h1 {
+            font-size: 2rem; /* Reduce font size */
+        }
+    
+        /* Content wrapper should take full width without flex */
+        .content-wrap {
+            display: block; /* Use block layout */
+            width: 100%;
+            padding: 20px;
+        }
+    
+        /* Left content takes full width */
+        .content-left {
+            flex: 1;
+            padding-left: 5%;
+            font-size: 3vw; /* Adjust font size */
+        }
+    
+        #content-p1 {
+            font-size: 4vw; /* Adjust font size */
+            font-family: Cambria;
+            word-wrap: break-word;
+        }
+    
+        #text {
+            font-size: 5vh;
+            margin-top: 0;
+        }
+    
+        #content-text, #about-text, #aboutus {
+            font-size: 3vw; /* Adjust font size */
+            color: rgba(0, 0, 0, 0.763);
+        }
+    
+        /* Image container adjusts to full width */
+        .bg-container {
+            width: 100%;
+            padding-right: 0;
+            padding-top: 50px; /* Adjust padding for smaller screens */
+        }
+    
+        #bg-img-container {
+            width: 100%;
+            padding: 15px; /* Reduce padding */
+        }
+    
+        #bg-img {
+            width: 100%; /* Take full width */
+            height: auto;
+        }
+    
+        /* About section layout */
+        .about-left, .about-right {
+            flex: 1; /* Take equal space */
+            padding-left: 5%;
+            font-size: 4vw; /* Adjust font size */
+        }
+    
+        .about-right p {
+            font-size: 3vw; /* Adjust font size */
+            color: rgba(0, 0, 0, 0.692);
+        }
+    }    
+}
