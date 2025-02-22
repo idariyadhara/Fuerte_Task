@@ -1,0 +1,147 @@
+.career__data {
+    margin: 30px auto; /* Centers content */
+    border: 2px solid black;
+    border-radius: 20px;
+    max-width: 90%; /* Makes it responsive */
+    width: 100%;
+}
+
+/* Content Padding */
+.career_analytics {
+    padding: 20px;
+}
+
+.career_analytics h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.career_analytics p {
+    font-size: 1.1rem;
+}
+
+/* Career Items - Responsive */
+.careerdata__items {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    padding: 0px 20px;
+    gap: 15px;
+}
+
+.items__left, .items__right {
+    flex: 1;
+    min-width: 200px; /* Ensures they don’t get too small */
+}
+
+.items__left h4, .items__right h4 {
+    color: blue;
+}
+
+/* Salary Section */
+.career__sal {
+    display: flex;
+    flex-wrap: wrap; /* Makes sure they stack on smaller screens */
+    gap: 10px;
+    margin-top: -10px;
+}
+
+.career__sal p {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+}
+
+.career__sal p:first-child {
+    background-color: rgba(255, 228, 196, 0.426);
+}
+
+.career__sal p:last-child {
+    background-color: rgba(172, 255, 47, 0.234);
+}
+
+/* Job Openings Section */
+.job__openings {
+    background-color: rgba(128, 128, 128, 0.074);
+    display: flex;
+    flex-wrap: wrap; /* Allows elements to wrap */
+    gap: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* Opening Numbers */
+.openings__numbers h4 {
+    margin-top: 0px;
+    font-size: 2rem;
+}
+
+.openings__numbers p {
+    font-size: 1.1rem;
+    margin-top: -20px;
+    color: rgba(0, 0, 0, 0.448);
+}
+
+/* Updated Section - Right Aligned */
+.update {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.642);
+    margin-left: auto;
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career__data {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .careerdata__items {
+        flex-direction: column; /* Stack items on small screens */
+        padding: 10px;
+    }
+    .career__sal {
+        flex-direction: column; /* Stack salary items */
+        align-items: center;
+    }
+
+    .items__left, .items__right {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .job__openings {
+        flex-direction: column; /* Stack job openings */
+        align-items: center;
+        text-align: center;
+    }
+
+    .update {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .career__sal p {
+        width: 80%;
+    }
+}
+@media (max-width: 480px) {
+    .career_analytics h1 {
+        font-size: 1.3rem;
+    }
+
+    .career_analytics p {
+        font-size: 1rem;
+    }
+
+    .items__left, .items__right {
+        min-width: 100%;
+    }
+
+    .career__sal p {
+        width: 50%;
+    }
+}

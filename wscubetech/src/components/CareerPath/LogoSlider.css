@@ -1,0 +1,18 @@
+.company__logo {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+  }
+  
+  .swiper-slide-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; /* Adjust width dynamically */
+  }
+  
+  .swiper-slide-logo img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+  }
+  

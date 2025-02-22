@@ -1,0 +1,177 @@
+.ca-resourse {
+    position: relative;
+    display: flex;
+    padding: 10px 120px;
+    margin-top: -70px;
+}
+
+.resource-data {
+    width: 30%;
+}
+.resource-data p, h1 {
+    padding-top: 40px;
+    margin: 0;
+}
+
+.resource-data img {
+    position: absolute;
+    left: 37.7%;
+    top: 40%;
+}
+
+.resource-data button {
+    background-color: blue;
+    color: white;
+    width: 200px;
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.resource-data button:hover {
+    box-shadow: 5px 5px 2px rgb(241, 200, 53);
+}
+
+.resourse-list {
+    width: 70%;
+}
+.resourse-list img {
+    position: absolute;
+    bottom: -25%;
+    left: 45%;
+    height: auto;
+}
+
+.resource-data-list {
+    left: 80%;
+    align-items: center;
+}
+.resource-data-list p {
+    position: absolute;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px rgb(12, 6, 6);
+    cursor: pointer;
+}
+.resource-data-list p:hover {
+    box-shadow: none;
+}
+
+/* Positioning for Larger Screens */
+#resource-interview {
+    top: -20%;
+    right: 24%;
+}
+#resource-quize {
+    top: 2%;
+    right: 16.5%;
+}
+#resource-article {
+    top: 25%;
+    right: 21%;
+}
+#resource-ebook {
+    top: 47%;
+    right: 27%;
+}
+#resource-challenge {
+    top: 67%;
+    right: 14%;
+}
+#resource-course {
+    bottom: -15%;
+    right: 16.5%;
+}
+#resource-tool {
+    bottom: -35%;
+    right: 28%;
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .ca-resourse {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .resource-data {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Ensures responsiveness */
+    }
+
+    .resource-data img {
+        max-width: 40%; /* Adjust image size */
+        height: auto;
+        position: static;
+        margin-top: 20px;
+    }
+
+    .resource-data button {
+        margin-left: 50px;
+        width: auto;
+        max-width: 300px;
+        padding: 15px 90px;
+        font-size: 1rem;
+    }
+
+    .resourse-list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .resourse-list img {
+        display: none; /* Hides background image */
+    }
+
+    /* Resource List Adjustments */
+    .resource-data-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px; /* Adds spacing between items */
+        margin-top: 20px;
+        position: static;
+    }
+
+    .resource-data-list p {
+        position: static;
+        width: 45%;
+        min-width: 150px;
+        text-align: center;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+    .resource-data button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .resource-data-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resource-data-list p {
+        width: 90%;
+        max-width: 300px;
+    }
+}

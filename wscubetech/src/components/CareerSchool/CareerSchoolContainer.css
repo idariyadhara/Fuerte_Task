@@ -1,0 +1,152 @@
+.ca-school-container {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh; 
+    background-image: url('../../assets/images/centers-bottom-a-bg.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+/* Hero Section */
+.ca-school-city {
+    background-image: url('../../assets/images/centers-top-bg.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px; /* Prevents text from stretching too wide */
+    margin: 0 auto;
+    color: white;
+    padding: 40px 20px;
+}
+
+.ca-school-city h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Adjust paragraph spacing and size */ 
+.ca-school-city p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    max-width: 90%;
+}
+
+/* Career Cities Section */
+.career-cities {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Reducing gap for better mobile compatibility */
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Individual City Card */
+.career-city {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+    transition: transform 0.3s ease-in-out;
+}
+
+.career-city:hover {
+    transform: scale(1.05); /* Small hover effect */
+}
+
+/* City Image */
+.career-city img {
+    width: 100%;
+    max-width: 150px;
+}
+
+/* City Name */
+.career-cities h1 {
+    font-size: 1.5rem;
+}
+
+/* City Description */
+.career-cities p {
+    margin-top: -10px;
+    font-size: 1rem;
+}
+
+/* Positioning the second city card differently */
+.career-city:nth-child(2) {
+    position: relative;
+    top: 30px; /* Moves it slightly downward */
+}
+
+/* Adjusting Career Center Section */
+.career-center-wrapper {
+    position: relative;
+    top: -150px; /* Slightly reducing upward movement for better responsiveness */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .career-cities {
+        gap: 50px; /* Reducing spacing for medium screens */
+    }
+
+    .career-center-wrapper {
+        top: 0px; /* Adjusting upward movement */
+    }
+}
+
+@media (max-width: 768px) {
+    .career-cities {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .career-city {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .career-city:nth-child(2) {
+        top: 0; /* Removes offset for better stacking */
+    }
+
+    .career-center-wrapper {
+        top: 0px; /* Adjusting upward movement */
+    }
+}
+
+@media (max-width: 480px) {
+    .ca-school-city h1 {
+        font-size: 1.8rem;
+    }
+
+    .ca-school-city p {
+        font-size: 1rem;
+    }
+
+    .career-city {
+        padding: 15px;
+        max-width: 220px;
+    }
+
+    .career-cities h1 {
+        font-size: 1.3rem;
+    }
+
+    .career-cities p {
+        font-size: 0.9rem;
+    }
+
+    .career-center-wrapper {
+        top: 0; /* Removing upward shift for better alignment */
+    }
+}

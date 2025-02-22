@@ -1,0 +1,87 @@
+.courses {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px;
+    padding: 5px 20px;
+    max-width: 1200px; /* Ensures the container doesn't exceed this width */
+    margin: auto;
+    justify-content: space-between; /* Distributes elements evenly */
+}
+
+/* Individual Course Styling */
+.course__detail {
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    flex: 1;
+    min-width:230px;
+}
+
+/* Images - Adjusted for responsiveness */
+.course__detail img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+.course__detail h1{
+    font-size: 1.5rem;
+}
+.course__session{
+    margin-top: -10px;
+}
+
+/* For Large Screens (1200px and above) */
+@media (min-width: 1200px) {
+    .courses {
+        flex-wrap: nowrap; /* Prevents wrapping */
+        justify-content: space-between;
+    }
+
+    .course__detail {
+        max-width: 48%; /* Each course takes almost half */
+        flex-direction: row; /* Places image and content side by side */
+        text-align: left;
+        gap: 20px;
+    }
+
+    .course__detail img {
+        max-width: 200px; /* Reduces image size to fit properly */
+    }
+}
+
+/* Tablet View: Maintain Spacing */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .courses {
+        flex-wrap: wrap; /* Allows wrapping for better fit */
+        justify-content: left;
+    }
+
+    .course__detail {
+        max-width: 45%; /* Each course takes 45% of the container */
+        flex-direction: row; /* Side by side */
+    }
+
+    .course__detail img {
+        max-width: 250px;
+    }
+}
+
+/* Mobile View: Stack Items */
+@media (max-width: 768px) {
+    .courses {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .course__detail {
+        width: 90%;
+        max-width: 100%;
+        flex-direction: column; /* Stack items */
+    }
+
+    .course__detail img {
+        max-width: 100%;
+    }
+}

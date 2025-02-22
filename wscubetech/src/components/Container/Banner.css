@@ -1,0 +1,98 @@
+.banner_image{
+  padding: 145px 0px;
+  position: relative;
+}
+.banner__layer_1{
+  display: flex;
+  gap:25px;
+}
+.banner__layer_1 img{
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 120px;
+  padding: 2px;
+  background-color: white;
+}
+#layer__img2{
+  margin-top: -50px;
+  height: 100px;
+}
+
+#layer__img3{
+  margin-top: -20px;
+  height: 90px;
+}
+#banner__layer_2{
+  margin-top: 20px;
+}
+#layer__img4{
+  height: 80px;
+  margin-top: 20px;
+  
+}
+#layer__img5{
+  height: 110px;
+  margin-top: -40px;
+}
+
+#layer__img6{
+  height: 90px;
+  margin-top: -50px;
+}
+#layer__img7{
+  height: 90px;
+  margin-top: 30px;
+  margin-left:-10px;
+}
+#layer__img8{
+  height: 80px;
+  margin-left: 80px;
+}
+#layer__img9{
+  height: 125px;
+  margin-top: -50px;
+  margin-left: 10px;
+}
+
+.label {
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  animation: upDown 7s ease-in-out infinite;
+}
+@keyframes upDown {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+.label-python {
+  top: 41.5%;
+  left: -15%;
+}
+.label-fullstack {
+  top: 38%;
+  right: -25%;
+}
+.label-performance {
+  bottom: 30%;
+  left: -30%;
+}
+.label-data {
+  bottom: 20%;
+  right: -5%;
+}
+
+@media screen and (max-width:1200px){
+  .banner_image{
+    display: none;
+  }
+}

@@ -1,0 +1,98 @@
+/* Swiper Container */
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 20px 0;
+    margin-top: -30px;
+}
+
+/* Image Container */
+.image-content {
+    position: relative;
+    width: 180px; /* Default size */
+    height: 180px;
+    box-shadow: 5px 5px 5px rgba(12, 6, 6, 0.3);
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+/* Hover Effects */
+.image-content:hover {
+    border: 2px solid black;
+    height: 220px; /* Scales up on hover */
+}
+
+/* Image Styles */
+.image-content img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.image-content:hover img {
+    transform: scale(0.85);
+}
+
+/* Mentor Name (h1) */
+.image-content h1 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    display: none; /* Hidden initially */
+}
+
+/* Show h1 on hover */
+.image-content:hover h1 {
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .image-content {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 900px) {
+    .image-content {
+        width: 140px;
+        height: 140px;
+    }
+    .swiper-container{
+        margin-top: -80px;
+    }
+}
+
+@media (max-width: 700px) {
+    .image-content {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-content {
+        width: 100px;
+        height: 100px;
+    }
+
+    .image-content h1 {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,122 @@
+.container__items{
+    display: flex;
+    color: white;
+}
+.items__text{
+    margin: 30px 80px;
+    padding: 30px 90px;
+    width: 40%;
+}
+.items__text h1{
+  font-size: 2.5rem;
+}
+.items__text p{
+  font-size: 1.5rem;
+}
+.items__icon img{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.items__icon {
+    display: flex;
+    gap: 40px; /* Adds space between each icon section */
+    align-items: center; /* Aligns items vertically */
+    margin-top: 50px;
+}
+
+.items__icon-data {
+    display: flex;
+    align-items: center; /* Aligns the icon and text in a row */
+    gap:20px; /* Space between the icon and text */
+}
+
+.items__icon-data img {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 50%;
+    width: 30px; /* Adjust width */
+    height: 30px; /* Adjust height */
+}
+.items__icon-data div {
+    display: flex;
+    flex-direction: column; /* Puts text in a vertical stack */
+}
+.items__icon-data p {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes extra padding */
+    font-size: 1rem; /* Adjust as needed */
+}
+
+/* Button spacing */
+.icons__button {
+    display: flex;
+    gap: 30px; /* Space between buttons */
+    margin-top: 50px; /* Adds margin above buttons */
+}
+
+.icon__button {
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#icon_button{
+    background-color: rgba(0, 0, 255, 0.819);
+    color: white;
+}
+.banner__item{
+    flex: 1;
+    margin-right: 170px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container__items {
+        padding: 40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .items__text {
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .items__icon {
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .items__icon-data {
+        flex-direction: column;
+        /* align-items: center;
+        text-align: center; */
+    }
+
+    .icons__button {
+        display: flex;
+        flex-direction: column; /* Stack buttons in smaller screens */
+        align-items: center; /* Center buttons horizontally */
+        width: 100%; /* Set a full width container */
+    }    
+
+    .icon__button {
+        width: 80%; /* Adjust width as needed */
+        max-width: 400px; /* Prevent buttons from being too wide */
+        padding: 15px 20px; /* Add padding for better appearance */
+        text-align: center; /* Ensure text is centered */
+    }
+}

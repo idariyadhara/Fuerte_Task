@@ -1,0 +1,166 @@
+/* Footer Styles */
+.footer {
+    margin-top: 120px;
+    background-color: rgb(11, 11, 91);
+    /* Light background for the footer */
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 2vh;
+}
+
+.footer-container {
+    display: flex;
+    /* Flex layout for footer sections */
+    flex-wrap: nowrap;
+    /* Prevent sections from wrapping onto new rows */
+    justify-content: flex-start;
+    /* Align items to the start of the container */
+    align-items: center;
+    /* Vertically align items */
+    max-width: 1200px;
+    /* Limit footer width */
+    margin: 0 auto;
+    /* Center footer content */
+    padding: 0 20px;
+    /* Add horizontal padding */
+}
+
+.footer-logo-container {
+    flex: 0 0 auto;
+    /* Prevent the logo from growing or shrinking */
+    margin-right: 50px;
+    /* Add space to the right of the logo */
+}
+
+.footer-logo-container img {
+    height: 150px;
+    width: 150px;
+}
+
+.footer-logo-container p {
+    color: white;
+    width: 300px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    /* Limit the logo size */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Footer section styles */
+.footer-section {
+    flex: 1 1 30%;
+    /* Each section takes 30% of the row, adjusts responsively */
+    margin-bottom: 20px;
+    /* Space below each section */
+    min-width: 200px;
+    /* Prevent sections from shrinking too much */
+    color: white;
+}
+
+.footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 0.9em;
+    line-height: 1.6;
+    /* Increase readability */
+}
+
+.footer-section ul {
+    list-style: none;
+    /* Remove default list styling */
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    /* Link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+    /* Hover color for links */
+}
+
+.footer-bottom {
+    text-align: center;
+    /* Center the copyright text */
+    font-size: 0.8em;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: white;
+}
+
+.courses-data {
+    padding: 10px 150px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Social Media Links */
+.social-media-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media-links a {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-media-links a:hover {
+    transform: scale(1.2);
+    color: orange;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        /* Stack sections vertically on small screens */
+        align-items: center;
+        /* Center align sections */
+    }
+
+    .footer-logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center items horizontally */
+        justify-content: center;
+        /* Center items vertically */
+        text-align: center;
+        /* Center text */
+        width: 100%;
+        /* Ensure it spans full width */
+        margin-bottom: 20px;
+        /* Add spacing below */
+    }
+
+    .footer-section {
+        text-align: center;
+        /* Center content in each section */
+    }
+}
+
+@media (max-width: 900px) {
+    .courses-data {
+        display: none;
+    }
+}

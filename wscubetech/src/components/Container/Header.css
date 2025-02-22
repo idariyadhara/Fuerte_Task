@@ -1,0 +1,254 @@
+/* 🔹 Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: none;
+    color: white;
+    position: relative;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 🔹 Logo */
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+/* 🔹 Dropdown (Desktop Only) */
+.dropdown {
+    display: flex;
+    gap: 15px;
+}
+
+.dropdown-button {
+    background: none;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.523);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    color: #222;
+    margin-top: 65px;
+}
+
+#career {
+    margin-left: 220px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+.dropdown-button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.dropdown-menu li:hover{
+    background-color: rgb(50, 50, 248);
+    border-radius: 10px;
+    color: white;
+} 
+
+.dropdown-menu li:hover {
+    background: rgb(50, 50, 248);
+    color: white;
+}
+
+/* 🔹 Sidebar (Hidden by Default) */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 30px;
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px); 
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: blue;
+}
+
+/* 🔹 Sidebar Logo */
+.sidebar-logo {
+    width: 150px;
+    margin: 10px auto;
+}
+
+/* 🔹 Sidebar Dropdown */
+.sidebar-dropdown-button {
+    background: none;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width: 90%;
+    margin: 5px auto;
+}
+
+/* 🔹 Sidebar Dropdown Menu (Default) */
+.sidebar-dropdown-menu {
+    background: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 5px auto;
+}
+
+/* 🔹 Align Dropdown to the Right in Sidebar */
+.sidebar-dropdown-menu.right-align {
+    position: absolute;
+    left: 250px; /* Moves the menu to the right of sidebar */
+    top: 0;
+    width: 200px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 200px;
+    color: #222;
+}
+
+/* 🔹 Dropdown Items */
+.sidebar-dropdown-menu li {
+    padding: 8px;
+}
+
+.sidebar-dropdown-menu li:hover {
+    background: blue;
+    color: white;
+}
+
+/* 🔹 Menu Icon (Visible in Small Screens) */
+.menu-icon {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+
+.login button{
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+    width: 100px;
+    background: transparent;
+    padding: 10px;
+}
+
+.login button:hover{
+    background-color: white;
+    color: #222;
+}
+
+/* Login Sidebar */
+.login-sidebar {
+    color: black;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height:90%;
+    background: white;
+    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    transition: right 0.3s ease-in-out;
+    z-index: 2000;
+}
+
+.login-sidebar.open {
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.login-sidebar h2 {
+    color: #222;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.login-sidebar input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.login-sidebar a{
+    padding-left: 5px;
+}
+
+.login-submit {
+    font-weight: bold;
+    width: 85%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* 🔹 Responsive Design */
+@media screen and (max-width: 768px) {
+    .dropdown {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .login{
+        display: none;
+    }
+    .login-sidebar {
+        width: 50%; /* Sidebar takes up 90% of the screen on small devices */
+    }
+}

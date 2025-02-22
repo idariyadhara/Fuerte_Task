@@ -1,0 +1,101 @@
+.masterclass-content {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('../../assets/images/testimonials-block-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 150px 0px;
+    padding: 80px 0px 70px 80px;
+    align-items: center;
+}
+
+/* Left Section */
+.masterclass-left-data {
+    width: 30%;
+}
+
+/* Right Section */
+.masterclass-right-data {
+    margin-left: 10px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Swiper Custom Styling */
+.swiper {
+    width: 100%;
+}
+
+/* Images inside the slider */
+.slider-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.arrow img {
+    border: 2px solid black;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.arrow img:hover {
+    opacity: 0.7;
+}
+
+/* 🔹 RESPONSIVE DESIGN 🔹 */
+@media screen and (max-width: 1024px) {
+    .masterclass-content {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center;
+        padding: 40px 20px;
+        margin: 50px 0;
+    }
+
+    .masterclass-left-data {
+        width: 90%;
+        text-align: center; /* Center the text */
+        margin-bottom: 20px;
+    }
+
+    .masterclass-right-data {
+        width: 70%;
+        margin-left: 0;
+    }
+    .arrow img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .arrow img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .masterclass-content {
+        padding: 30px 10px;
+    }
+
+    .masterclass-left-data {
+        width: 100%;
+    }
+
+    .masterclass-right-data {
+        width: 100%;
+    }
+    .arrow img {
+        width: 30px;
+        height: 30px;
+    }
+}

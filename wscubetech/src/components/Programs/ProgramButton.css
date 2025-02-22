@@ -1,0 +1,39 @@
+.program-button {
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.program-button.active {
+    background: blue;
+    color: white;
+    box-shadow: 5px 5px 2px rgb(12, 6, 6);
+}
+
+.program-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.program-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .program-list {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+}

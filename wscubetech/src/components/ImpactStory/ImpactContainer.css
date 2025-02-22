@@ -1,0 +1,16 @@
+.impact_data {
+    display: flex;         /* Enables flexbox */
+    flex-direction: column; /* Stacks elements vertically */
+    margin-top: 30px;
+    align-items: center;    /* Centers horizontally */
+    justify-content: center; /* Centers vertically */
+    text-align: center;     /* Ensures text is centered */  
+}
+.impact_data h1{
+    font-size: 2rem;
+}
+.impact_data p{
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,78 @@
+.career_path {
+    background-color: rgba(225, 241, 253, 0.479);
+    background-image: url('../../assets/images/centers-top-bg.png');
+    background-repeat: no-repeat;
+    background-position: top; /* Centers the image */
+    padding: 40px 20px; /* Adds spacing */
+}
+
+/* Center content and keep it within bounds */
+.career_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    max-width: 800px; /* Prevents text from stretching too wide */
+    margin-left: auto;
+    margin-right: auto;
+}
+.career-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 10px;
+    margin-top: 20px;
+}
+/* Responsive Typography */
+.career_data h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Adjust paragraph spacing and size */
+.career_data p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    max-width: 90%; /* Prevents text from stretching */
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .career_data h1 {
+        font-size: 1.8rem;
+    }
+
+    .career_data p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .career_path {
+        background-size: contain; /* Adjusts background for smaller screens */
+        padding: 30px 15px;
+    }
+
+    .career_data h1 {
+        font-size: 1.5rem;
+    }
+
+    .career_data p {
+        font-size: 1rem;
+        margin-top: -5px;
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .career_data h1 {
+        font-size: 1.3rem;
+    }
+
+    .career_data p {
+        font-size: 0.9rem;
+    }
+}

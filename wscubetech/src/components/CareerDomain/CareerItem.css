@@ -1,0 +1,174 @@
+.career__domain {
+    position: relative;
+    min-height: 800px;
+    padding: 20px;
+   
+}
+
+/* Center domain details for smaller screens */
+.domain_detail {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    width: 80%;
+    max-width: 500px;
+    font-size: 1.2rem;
+}
+
+/* Career box container */
+.career_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Default gap for larger screens */
+    justify-content: center;
+    margin-top: 100px;
+    padding: 0 90px;
+}
+.career_items:hover{
+    animation: upDown 1s ease-in-out normal;
+}
+@keyframes upDown {
+    50% {
+        transform: translateY(-10px);
+    }
+  }
+
+/* First two items stay positioned on large screens */
+.career_items:nth-child(1) {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.career_items:nth-child(2) {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+/* General style for career items */
+.career_items {
+    background-color: white;
+    border: 3px solid black;
+    width: 200px;
+    border-radius: 20px;
+    padding: 70px 20px;
+    text-align: center;
+}
+.career_items h1{
+    font-size: 1.2rem;
+}
+
+/* 3rd to 6th items have larger margin-top */
+.career_items:nth-child(n+3):nth-child(-n+6) {
+    margin-top: 300px;
+}
+
+/* All items after 6th have regular margin-top */
+.career_items:nth-child(n+7) {
+    margin-top: 20px;
+}
+
+
+@media (min-width: 1201px) {
+    .career_box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px; /* Restrict width for better centering */
+        margin: 100px auto 0; /* Centering */
+        padding: 0 50px; /* Ensure spacing on the sides */
+    }
+
+    .career_items {
+        width: 100%; /* Fit within grid */
+        max-width: 250px; /* Keep items compact */
+    }
+}
+
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    /* Remove absolute positioning */
+    .career_items {
+        position: relative !important;
+        margin-top: 0 !important;
+        width: calc(80% - 0px); /* Reduce spacing */
+        font-size: 1.1rem;
+    }
+
+    /* First two items should follow the grid */
+    .career_items:nth-child(1),
+    .career_items:nth-child(2) {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: none;
+    }
+
+    /* Set 2 items per row for medium screens */
+    .career_box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; /* Reduce gap */
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    /* Center the heading */
+    .domain_detail {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+        top: unset;
+        left: unset;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Further reduce spacing for small screens */
+    .career_box {
+        gap: 15px; /* Very small gap */
+        margin-top: 20px;
+    }
+
+    /* Adjust box size and remove padding */
+    .career_items {
+        width: calc(90% - 15px);
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    /* Reduce font size */
+    .domain_detail {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 496px) {
+    .career_box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 1 item per row */
+        gap: 5px;
+        margin-top: 20px;
+    }
+
+    .career_items {
+        width: 90%; /* Full width */
+        padding: 12px;
+        font-size: 0.9rem; /* Smaller text */
+    }
+
+    .domain_detail {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
