@@ -1,0 +1,57 @@
+.alumani-container{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+.review-star{
+    display: flex;
+    gap:10px;
+    align-items: center; /* Align items properly */
+    flex-wrap: wrap; /* Ensures wrapping on small screens */
+
+}
+.review-star img{
+    width: 100px;
+    height: auto;
+}
+#alumani-h3{
+    margin-top: -5px;
+}
+.alumani-reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between cards */
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+.alumni-card{
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid black;
+    
+}
+/* Responsive for tablets (≤1024px) */
+@media screen and (max-width: 1024px) {
+    .alumani-reviews {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+    .review-star {
+        justify-content: center; /* Center align on small screens */
+    }
+    #alumani-h3 {
+        text-align: center; /* Center heading */
+        font-size: 18px; /* Adjust font size */
+        margin-top: 0;
+    }
+}
+
+/* Responsive for mobile screens (≤768px) */
+@media screen and (max-width: 768px) {
+    .alumani-reviews {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+    }
+}

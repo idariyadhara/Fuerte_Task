@@ -1,0 +1,80 @@
+.ce-main-container {
+    margin-top: 50px;
+    background: #012970;
+    color: white;
+    padding: 20px;
+}
+
+.certificate-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensures elements wrap on smaller screens */
+}
+
+.certificate-ce img {
+    max-width: 100%; /* Ensures image is responsive */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.certificate-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.certificate-content h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Highlight box */
+.highlight-box {
+    width: 100%;
+    max-width: 600px;
+    background: #0251cc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.highlight-item {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    min-width: 120px; /* Prevents items from getting too small */
+}
+
+.highlight-item h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .certificate-container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .certificate-content {
+        max-width: 100%;
+    }
+
+    .highlight-box {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .highlight-item { 
+        padding: 10px 0;
+    }
+}

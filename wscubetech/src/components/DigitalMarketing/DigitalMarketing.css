@@ -1,0 +1,18 @@
+.digital_marketing_container .container {
+    background-image: none !important;
+    background-color: aliceblue !important;  /* Remove background image */  
+    padding: 90px 0px !important; 
+    margin-bottom: 50px;
+}
+.digital_marketing_container .mentorship__programs{
+    color: black !important;
+}
+.digital_marketing_container .advisor-data{
+    display: none;
+}
+.hide-logo {
+    display: none !important;
+}
+.Dmarket-review{
+    margin-top: 70px;
+}

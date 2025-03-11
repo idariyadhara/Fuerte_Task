@@ -15,7 +15,7 @@
     border: 2px solid black;
     border-radius: 10px;
     flex: 1;
-    min-width:230px;
+    min-width:150px;
 }
 
 /* Images - Adjusted for responsiveness */
@@ -28,6 +28,9 @@
     font-size: 1.5rem;
 }
 .course__session{
+    margin-top: -10px;
+}
+.program__rating{
     margin-top: -10px;
 }
 

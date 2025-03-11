@@ -1,0 +1,107 @@
+.feestructure-container { 
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border: 2px solid black;
+    padding: 40px;
+}
+
+.video-meeting img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+.fee-data {
+    margin-left: 40px;
+}
+
+/* Align Fee Structure Row */
+.fee-structure {
+    align-items: center;
+    gap: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Display price in one line */
+.fee-price {
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fee-price h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.fee-price p {
+    margin-top: 50px;
+    font-size: 20px;
+    color: red;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #777;
+}
+
+/* Fee Details with Right Icon */
+.fee-details p {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.icon {
+    color: green;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.fee-data button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 200px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .feestructure-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .video-meeting img {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .fee-data {
+        margin-left: 0;
+    }
+
+    .fee-structure {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fee-price {
+        flex-direction: column;
+    }
+
+    .fee-price p{
+        margin: 0px;
+    }
+    .fee-details p {
+        justify-content: center;
+    }
+}

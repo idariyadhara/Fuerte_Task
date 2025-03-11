@@ -1,0 +1,29 @@
+.container-image {
+    position: absolute;  /* Position it independently */
+    top: 50%;  /* Align in the middle */
+    right: 300px; /* Adjust distance from the right */
+    transform: translateY(-50%); /* Center it vertically */
+    width: 250px; /* Adjust width */
+}
+
+.container-image img {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 1024px) {
+    .container-image {
+        position: static;  /* Remove absolute positioning */
+        transform: none; /* Reset transformations */
+        text-align: center; /* Center the image */
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px; /* Add spacing */
+    }
+
+    .container-image img {
+        width: 100%;  /* Make it responsive */
+        max-width: 500px;  /* Set max width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

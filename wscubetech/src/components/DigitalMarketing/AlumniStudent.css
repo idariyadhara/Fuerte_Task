@@ -1,0 +1,103 @@
+.our-student-alumni{
+    position: absolute;  /* Position it independently */
+    top: 18%;  /* Align in the middle */
+    right: 0px; /* Adjust distance from the right */
+    width: 50%;
+}
+.our-alumni-data{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.alumni-student-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.alumni-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.alumani-student-card {
+    width: 120px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(250, 235, 215, 0.4);
+}
+
+.alumani-student-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.alumni-job-data {
+    width: 150px;
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.719);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+@media (max-width: 1024px) {
+    .our-student-alumni {
+        position: static;  /* Removes absolute positioning */
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .alumni-row {
+        flex-direction: row; /* Stack elements vertically */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .alumani-student-card,
+    .alumni-job-data {
+        width: 90%; /* Adjusts width for smaller screens */
+        max-width: 250px;
+    }
+}
+@media (max-width: 768px) {
+    .our-student-alumni {
+        position: static;  /* Removes absolute positioning */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .alumni-row {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 15px;
+    }
+
+    .alumani-student-card,
+    .alumni-job-data {
+        width: 80%; /* Adjusts width for smaller screens */
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .alumni-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alumani-student-card,
+    .alumni-job-data {
+        width: 90%;
+    }
+
+    .alumani-student-card {
+        padding: 8px;
+    }
+}

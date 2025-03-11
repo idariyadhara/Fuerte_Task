@@ -1,0 +1,93 @@
+.program_eligibility{
+    display: flex;
+    margin: 20px 150px;
+}
+.for_whom{
+    width: 30%;
+}
+.eligibility_criteria{
+    width: 70%;
+}
+
+.eligibility_card {
+    height: 200px;
+    padding: 10px;
+    border: 2px solid black; /* Border around each card */
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+}
+.eligibility_card img{
+    border-radius: 10px;
+    height: 120px;
+    width: 150px;
+} 
+.eligibility-detail{
+    margin: 20px 150px;
+}
+@media screen and (max-width: 1024px) {
+    .program_eligibility {
+        flex-direction: column;
+        margin: 20px 50px; /* Reduce margins */
+    }
+
+    .for_whom {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .eligibility_criteria {
+        width: 100%;
+    }
+}
+
+/* Responsive for smaller screens (≤768px) */
+@media screen and (max-width: 768px) {
+    .program_eligibility {
+        margin: 20px 20px; /* Reduce side margins */
+    }
+
+    .eligibility_card {
+        height: auto;
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .eligibility_card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .eligibility-detail {
+        margin: 10px 20px;
+        text-align: center;
+    }
+}
+
+/* Extra small screens (≤480px) */
+@media screen and (max-width: 480px) {
+    .program_eligibility {
+        margin: 10px;
+    }
+
+    .eligibility_criteria {
+        width: 100%;
+    }
+
+    .eligibility_card {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .eligibility_card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .eligibility-detail {
+        margin: 10px;
+        font-size: 14px;
+    }
+}

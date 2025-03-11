@@ -1,0 +1,14 @@
+.logo-carousel {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-carousel img {
+    width: 100px; /* Adjust size */
+    height: auto;
+    object-fit: contain;
+  }
+  

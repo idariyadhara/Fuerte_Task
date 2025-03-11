@@ -97,8 +97,10 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .career__data {
-        max-width: 100%;
-        margin: 20px;
+        max-width: 90%;
+        margin: 20px;   
+        width: 100%;
+        padding: 10px; /* Add padding to prevent content from touching edges */
     }
 
     .careerdata__items {
@@ -129,6 +131,13 @@
     }
 }
 @media (max-width: 480px) {
+    .career__data {
+        margin: 15px auto; /* Reduce margin for smaller screens */
+        border-radius: 10px; /* Slightly smaller rounded corners */
+        max-width: 95%; /* Increase responsiveness */
+        width: 100%;
+        padding: 10px; /* Add padding to prevent content from touching edges */
+    }
     .career_analytics h1 {
         font-size: 1.3rem;
     }

@@ -1,0 +1,36 @@
+.lerner-main-container {
+    background-color: aliceblue;
+    padding: 40px 0px;
+}
+
+.lerner-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex; 
+    align-items: center; /* Align text and video */
+    gap: 20px; /* Space between text and video */
+}
+
+.lerner-story {
+    width: 60%;
+}
+
+.lerner-container video {
+    width: 40%;
+    border-radius: 20px;
+}
+
+/* Make it responsive for tablets */
+@media (max-width: 768px) {
+    .lerner-container {
+        flex-direction: column; /* Stack elements */
+        text-align: center; /* Center-align text */
+        padding: 20px;
+    }
+
+    .lerner-story, 
+    .lerner-container video {
+        width: 100%; /* Full width */
+        margin-left: 0; /* Remove margin */
+    }
+}

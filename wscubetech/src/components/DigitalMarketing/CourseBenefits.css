@@ -1,0 +1,88 @@
+.course-benefit-container-main{
+    background-image: url('../../assets/images/hero-section-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.course-benefit-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Center text and adjust spacing */
+.study-reason {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Flexbox layout for course reviews */
+.course-demand-review {
+    display: flex;
+    justify-content: space-between; /* Better spacing */
+    align-items: center;
+    gap: 30px; /* Increased spacing for better separation */
+}
+
+/* Adjust course review sections */
+.course-demand,
+.courses-reviews {
+    width: 50%;
+    text-align: center;
+}
+/* Ensure images are responsive */
+.course-demand img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded edges for aesthetics */
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .course-benefit-container {
+        padding: 20px; /* Further reduce padding */
+    }
+
+    .course-demand-review {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .course-demand img {
+        max-width: 80%; /* Reduce image size slightly */
+    }
+
+    .study-reason {
+        margin-bottom: 40px; /* Adjust margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .course-benefit-container {
+        padding: 15px; /* Minimal padding for small screens */
+    }
+
+    .study-reason {
+        margin-bottom: 30px; /* Reduce margin */
+    }
+
+    .course-demand img {
+        max-width: 100%; /* Full width images */
+    }
+
+    .course-demand h3,
+    .courses-reviews h3 {
+        font-size: 1.2rem; /* Slightly smaller headings */
+    }
+
+    .course-demand p,
+    .courses-reviews p {
+        font-size: 0.95rem; /* Adjust text size for readability */
+    }
+}

@@ -1,5 +1,6 @@
 import './ContainerItems.css';
 import Banner from './Banner';
+import InquiryForm from '../DataAnalytics/InquiryForm';
 
 const ContainerItems = () => {
     return (
@@ -32,7 +33,7 @@ const ContainerItems = () => {
                 </div>
                 <div className='icons__button'>
                     <button id="icon_button" className='icon__button'>Explore Programs</button>
-                    <button className='icon__button'>Book Mentor Session</button>
+                    <InquiryForm heading="Book Mentor Session" buttonText="Book Mentor Session" />
                 </div>
             </div>
 

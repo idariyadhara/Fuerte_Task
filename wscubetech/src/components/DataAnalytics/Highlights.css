@@ -1,0 +1,178 @@
+ .highlights{
+    margin: 0px 150px;
+}
+
+.highlight_details{
+    display: flex;
+}
+.highlights_buttons{
+    align-items: start;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-right: 100px;
+}
+.highlights_buttons button{
+    min-width: 250px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%; /* Ensures all buttons have the same width */
+    box-sizing: border-box; /* Prevents padding from affecting size */
+} 
+
+.highlights_buttons button:hover {
+    background: #ffbf47;
+}
+
+.highlights_buttons button.active {
+    background: #ffbf47;
+}
+.content {
+    flex-grow: 1;
+}
+.hightlight_card{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin-bottom: 16px;
+}
+.hightlight_card img {
+    width: 300px;
+    height: 200px;
+    border-radius: 6px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+.hightlight-card-content {
+    flex: 1;
+}
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.card-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+.bullet-point {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 6px;
+}
+.bullet-point::before {
+    content: '\2022';
+    color: #ffbf47;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 1024px) {
+    .highlights {
+        margin: 0px 150px; /* Reduce side margins */
+    }
+
+    .highlight_details {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .highlights_buttons {
+        width: 100%;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .highlights_buttons button {
+        width: 80%; /* Adjust button width */
+        text-align: center;
+    }
+
+    .hightlight_card {
+        width: 100%; /* Full width */
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .hightlight_card img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Responsive for mobile screens (≤768px) */
+@media screen and (max-width: 768px) {
+    .highlights {
+        margin: 0px 50px; /* Reduce margins further */
+    }
+
+    .highlights_buttons {
+        width: 100%;
+        align-items: center;
+    }
+
+    .highlights_buttons button {
+        font-size: 14px;
+        padding: 8px;
+        width: 90%;
+    }
+
+    .hightlight_card {
+        padding: 10px;
+        flex-direction: column; /* Stack image and text */
+    }
+
+    .hightlight_card img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .hightlight-card-content {
+        text-align: center;
+    }
+}
+
+/* Extra small screens (≤480px) */
+@media screen and (max-width: 480px) {
+    .highlights {
+        margin: 0px 50px; /* Minimal margin */
+    }
+
+    .highlights_buttons button {
+        font-size: 12px;
+        padding: 6px;
+        width: 100%;
+    }
+
+    .hightlight_card {
+        padding: 8px;
+    }
+
+    .hightlight_card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+}

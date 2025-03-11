@@ -1,0 +1,150 @@
+.module-container {
+    background-color: #d6e4f865;
+    padding: 20px;
+}
+
+.curriculum {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.module_header {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background-color: #d6e4f865;
+    color: black;
+}
+
+.download-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+.course-info {
+    background-color: rgba(255, 235, 205, 0.526);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.info-box { 
+    flex: 1;
+    font-weight: bold;
+}
+
+.placement-support {
+    background: orange;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.modules {
+    margin-top: 20px;
+}
+
+.module {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.module-title {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.module:hover {
+    background: #eef2f7;
+}
+
+/* Expandable Content */
+.topics-container {
+    display: none;
+    margin-top: 10px;
+}
+
+.module.expanded .topics-container {
+    display: flex;
+    gap: 50px;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 300px;
+        opacity: 1;
+    }
+}
+
+.topics {
+    padding-left: 20px;
+}
+
+.topics h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.topics li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-info {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-box {
+        width: 100%; /* Make each box take full width */
+    }
+
+    .placement-support {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    .module {
+        padding: 10px;
+    }
+
+    .module-title {
+        font-size: 16px;
+    }
+    .module.expanded .topics-container {
+        display: block;
+        animation: slideDown 0.5s ease-in-out;
+    }
+}

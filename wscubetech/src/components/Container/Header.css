@@ -1,12 +1,21 @@
 /* 🔹 Header Styles */
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(35, 35, 221);
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: none;
-    color: white;
-    position: relative;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+.header.sticky {
+    background: rgb(35, 35, 221);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 .header-left {
     display: flex;
@@ -22,6 +31,7 @@
 
 /* 🔹 Dropdown (Desktop Only) */
 .dropdown {
+    position: relative;
     display: flex;
     gap: 15px;
 }
@@ -38,13 +48,15 @@
 
 .dropdown-menu {
     position: absolute;
+    top: 40px;
+    left: 0;
     background: white;
     list-style: none;
-    padding: 10px;
+    padding: 10px 0;
     border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
     width: 200px;
-    color: #222;
-    margin-top: 65px;
 }
 
 #career {
@@ -53,6 +65,13 @@
 
 .dropdown-menu li {
     padding: 10px;
+}
+.dropdown-menu li a {
+    text-decoration: none; /* Removes underline */
+    color: black;
+}
+.dropdown-menu li a:hover{
+    color: white;
 }
 .dropdown-button:hover{
     background-color: white;
@@ -64,11 +83,6 @@
     border-radius: 10px;
     color: white;
 } 
-
-.dropdown-menu li:hover {
-    background: rgb(50, 50, 248);
-    color: white;
-}
 
 /* 🔹 Sidebar (Hidden by Default) */
 .sidebar {
@@ -137,9 +151,11 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin-top: 200px;
+    color:black;
+}
+.sidebar-dropdown-menu.right-align a{
     color: #222;
 }
-
 /* 🔹 Dropdown Items */
 .sidebar-dropdown-menu li {
     padding: 8px;
@@ -167,6 +183,8 @@
     width: 100px;
     background: transparent;
     padding: 10px;
+    margin-right: 50px;
+    
 }
 
 .login button:hover{
@@ -235,7 +253,6 @@
     margin-top: 10px;
 }
 
-
 /* 🔹 Responsive Design */
 @media screen and (max-width: 768px) {
     .dropdown {
@@ -244,6 +261,7 @@
 
     .menu-icon {
         display: block;
+        margin-right: 30px; 
     }
     .login{
         display: none;

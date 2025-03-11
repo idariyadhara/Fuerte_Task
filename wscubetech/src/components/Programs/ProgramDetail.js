@@ -1,4 +1,5 @@
 import './ProgramDetail.css';
+import InquiryForm from '../DataAnalytics/InquiryForm';
 
 const ProgramDetail = ({ program }) => {
     if (!program) return null;
@@ -41,6 +42,7 @@ const ProgramDetail = ({ program }) => {
                         </div>
                     </div>
                 </div>
+                <InquiryForm heading="Download Curriculum" buttonText="Download Curriculum" />
             </div>
         </div>
     );

@@ -1,0 +1,13 @@
+.web-mentor{
+    margin: 10px 50px;
+    flex-wrap: wrap;
+}
+
+.web-mentor p{
+    margin-bottom: 50px;
+}
+@media(max-width:768px) {
+    .web-mentor p{
+        margin-bottom: 80px;
+    }
+}

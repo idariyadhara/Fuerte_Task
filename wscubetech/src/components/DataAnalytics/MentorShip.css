@@ -1,0 +1,330 @@
+.mentor_container {
+    display: flex;
+    padding: 20px 150px;
+    margin-top: 130px;
+}
+
+#mentor-icon {
+    width: 170px;
+    padding: 2px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.mentor_container p span {
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0px 5px;
+
+}
+.mentorship__programs {
+    color: white;
+    width: 40%;
+}
+
+.mentorship__programs h1 {
+    margin-top: -30px;
+}
+
+.package_data {
+    display: flex;
+    gap: 10px;
+}
+
+.package_data h1 {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.advisor-data {
+    display: flex;
+    margin-top: 30px;
+}
+
+.advisor-data button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.advisor-data button:hover {
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+}
+
+.advisor-data p {
+    margin-left: 50px;
+}
+
+.card {
+    position: relative;
+    background: white;
+    width: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin-left: 120px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.badge {
+    display: inline-block;
+    background: #f4b400;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.date {
+    color: #000;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+.offer {
+    background: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.price-section {
+    margin: 12px 0;
+}
+
+.price-text {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+}
+
+.discount {
+    background: #28a745;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.apply-btn {
+    background: #0057ff;
+    color: white;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.apply-btn:hover {
+    background: #0041cc;
+}
+
+.terms {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: #0057ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mentorship {
+    color: white;
+}
+
+#learners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Video Icon Container (for proper positioning) */
+.video-icon-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+/* Video Icon Styling */
+.video-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.video-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Video Modal */
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.video-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+}
+
+.video-content video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .mentor_container {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mentorship__programs {
+        width: 100%;
+    }
+
+    .package_data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advisor-data {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .advisor-data p {
+        margin-left: 0;
+    }
+
+    .card {
+       margin: 20px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mentor_container {
+        padding: 10px;
+    }
+
+    #mentor-icon {
+        width: 120px;
+    }
+
+    .mentorship__programs {
+        width: 100%;
+    }
+
+    .package_data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advisor-data button {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .apply-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mentor_container {
+        padding: 5px;
+    }
+
+    #mentor-icon {
+        width: 100px;
+    }
+
+    .mentorship__programs {
+        width: 100%;
+    }
+
+    .advisor-data button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .card {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .apply-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .close-btn {
+        font-size: 25px;
+    }
+}

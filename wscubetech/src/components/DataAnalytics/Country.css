@@ -1,0 +1,157 @@
+.country-container{
+    display: flex;
+    color: white;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    background-image: url('../../assets/images/centers-top-bg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.country-data{
+    width: 50%;
+}
+.country-form{
+    display: flex;
+}
+.phone-input-wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+}
+
+.country-dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.phone-input-wrapper input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.country-form button{
+    margin-top: 20px;
+    padding: 15px;
+    margin-left: 30px;
+    width: 200px;
+}
+.country-right-data{
+    margin: 20px 80px;
+}
+.country-right-data img{
+    height: 150px;
+    border-radius: 10px;
+}
+/* Adjust the layout for smaller screens */
+
+@media screen and (max-width: 1024px) {
+    .country-container {
+        flex-direction: column; /* Stack elements */
+        padding: 30px;
+    }
+
+    .country-data {
+        width: 100%; /* Full width on smaller screens */
+        text-align: center;
+    }
+
+    .country-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phone-input-wrapper {
+        max-width: 50%; /* Allow full width */
+        margin-bottom: 10px;
+    }
+
+    .country-form button {
+        margin-left: 0; /* Remove left margin */
+        width: 50%; /* Full width button */
+    }
+
+    .country-right-data {
+        margin: 20px auto; /* Center the section */
+    }
+
+    .country-right-data img {
+        height: 140px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .country-container {
+        flex-direction: column; /* Stack elements */
+        padding: 20px;
+    }
+
+    .country-data {
+        text-align: center;
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .country-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phone-input-wrapper {
+        max-width: 65%; /* Allow full width */
+        margin-bottom: 10px;
+    }
+
+    .country-form button {
+        margin-left: 0; /* Remove left margin */
+        width: 65%; /* Full width button */
+    }
+
+    .country-right-data {
+        margin: 20px auto; /* Adjust spacing */
+    }
+
+    .country-right-data img {
+        height: 120px;
+        width: auto;
+    }
+}
+
+/* Adjust styles for very small screens (mobile phones) */
+@media screen and (max-width: 480px) {
+    .phone-input-wrapper {
+        flex-direction: column;
+        border-radius: 10px;
+        max-width: 100%;
+    }
+
+    .country-dropdown select {
+        width: 100%;
+        text-align: center;
+    }
+
+    .phone-input-wrapper input {
+        width: 100%;
+        text-align: center;
+    }
+
+    .country-form button {
+        width: 100%;
+        padding: 12px;
+    }
+    .country-right-data img {
+        height: 120px;
+        width: 100%;
+    }
+}

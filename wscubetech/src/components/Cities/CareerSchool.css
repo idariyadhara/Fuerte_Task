@@ -1,0 +1,155 @@
+/* Ensures full-width background */
+.career-main-cities {
+    margin: auto;
+    background-color: rgb(8, 8, 47);
+    display: flex;
+    padding: 100px 120px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+/* Flexbox container for text & image */
+.career-school-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* ✅ Centers content */
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    color: white;
+    text-align: center;
+    padding: 0 20px; /* ✅ Adds padding for smaller screens */
+}
+
+/* Left Section - Text */
+.career-city-text {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px; /* ✅ Increases width flexibility */
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Styling Heading & Paragraphs */
+.career-city-text h1, 
+.career-city-text p {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.career-city-text h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+/* Spacing & Readability */
+.career-city-text p {
+    font-size: 16px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.career-city-text p:last-of-type {
+    margin-bottom: 40px;
+}
+
+/* Right Section - Image */
+.career-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Styling */
+.career-image img {
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    min-height: 400px;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media screen and (max-width: 1024px) {
+    .career-main-cities {
+        padding: 80px 50px;
+    }
+    .career-school-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .career-city-text {
+        max-width: 90%; /* ✅ Ensures text doesn't overflow */
+    }
+    .career-city-text h1,
+    .career-city-text p {
+        text-align: center;
+    }
+    .career-image {
+        order: -1; /* ✅ Moves image above text on small screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .career-main-cities {
+        padding: 60px 30px;
+    }
+    .career-school-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .career-city-text {
+        width: 100%;
+        text-align: center;
+    }
+    .career-city-text h1 {
+        font-size: 24px;
+    }
+    .career-city-text p {
+        font-size: 14px;
+    }
+    .career-image img {
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .career-main-cities {
+        padding: 40px 20px;
+    }
+    .career-city-text {
+        width: 100%;
+        text-align: center;
+    }
+    .career-city-text h1 {
+        font-size: 22px;
+    }
+    .career-city-text p {
+        font-size: 13px;
+    }
+    .career-image img {
+        max-height: 250px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .career-main-cities {
+        padding: 30px 15px;
+    }
+    .career-city-text h1 {
+        font-size: 20px;
+    }
+    .career-city-text p {
+        font-size: 12px;
+    }
+    .career-image img {
+        max-height: 220px;
+    }
+}

@@ -1,4 +1,5 @@
 import './Courses.css';
+import InquiryForm from '../DataAnalytics/InquiryForm';
 
 const Courses = ({courses}) => {
     return (
@@ -19,6 +20,7 @@ const Courses = ({courses}) => {
                     <p>{course.sessions}</p>
                     <p>{course.duration}</p>
                 </div>
+                <InquiryForm heading="View Curriculum" buttonText="View Curriculum"/>
             </div>
         ))}
     </div>

@@ -1,0 +1,108 @@
+.mentor-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.mentor-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mentor-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    width: 80%;
+    padding: 10px;
+}
+
+.mentor-card {
+    flex: 0 0 auto;
+    width: 250px;
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mentor-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.company-logo {
+    width: 80px;
+    margin-top: 10px;
+}
+
+.prev-btn, .next-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: #0056b3;
+}
+
+/* Hide Scrollbar */
+.mentor-list::-webkit-scrollbar {
+    display: none;
+}
+@media (max-width: 1024px) {
+    .mentor-list {
+        width: 90%; /* Increase width to take more space */
+    }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .mentor-slider {
+        flex-direction: column;
+    }
+
+    .mentor-list {
+        width: 100%;
+        gap: 10px; /* Reduce gap between mentor cards */
+    }
+
+    .mentor-card {
+        width: 200px; /* Reduce card width for better fit */
+        padding: 10px;
+    }
+
+    .company-logo {
+        width: 60px; /* Reduce logo size */
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 16px;
+        padding: 8px 12px;
+        top: auto;
+        bottom: 10px;
+    }
+
+    .prev-btn { left: 10px; }
+    .next-btn { right: 10px; }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .mentor-card {
+        width: 180px; /* Further reduce width */
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}

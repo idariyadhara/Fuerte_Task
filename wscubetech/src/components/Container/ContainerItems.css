@@ -1,6 +1,7 @@
 .container__items{
     display: flex;
     color: white;
+    margin-top: 70px;
 }
 .items__text{
     margin: 30px 80px;
@@ -71,11 +72,17 @@
     background-color: rgba(0, 0, 255, 0.819);
     color: white;
 }
-.banner__item{
-    flex: 1;
-    margin-right: 170px;
-}
 
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+    .items__text {
+      margin: 30px 0px;  /* Remove side margin */
+      margin-right: 110px;
+      padding: 20px 40px; /* Reduce padding */
+      width: 40%; /* Expand to full width */
+      text-align: left; /* Align content to the beginning */
+    }
+  }
+  
 /* Responsive Design */
 @media (max-width: 1200px) {
     .container__items {
