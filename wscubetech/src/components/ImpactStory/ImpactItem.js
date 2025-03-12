@@ -24,17 +24,17 @@ const ImpactItem = () => {
             </div>
             <div className='impact_right_data'>
                 <div className='impact_images'>
-                    <img src={require('../../assets/images/image (3).jpeg')} alt="Person1"/>
-                    <img src={require('../../assets/images/image (1).jpeg')} alt="Person1"/>
-                    <img src={require('../../assets/images/image (2).jpeg')} alt="Person1"/>
-                    <img src={require('../../assets/images/image (4).jpeg')} alt="Person1"/>
-                    <img src={require('../../assets/images/image (4).jpeg')} alt="Person1"/>                                        
+                    <img src={require('../../assets/images/abhishek.jpeg')} alt="Person1"/>
+                    <img src={require('../../assets/images/zeeshan.jpeg')} alt="Person1"/>
+                    <img src={require('../../assets/images/mohit.jpeg')} alt="Person1"/>
+                    <img src={require('../../assets/images/aprakash.jpg')} alt="Person1"/>
+                    <img src={require('../../assets/images/poojamam.jpeg')} alt="Person1"/>                                        
                 </div>
 
                <div className='impact_right_detail'>
                     <h1>3M+</h1>
                     <p>Learners On <strong style={{'color':'red'}}>YouTube</strong></p>
-                    <a href='https://google.com'>@wscubeTech | 5K videos</a>
+                    <a href='https://fuertedevelopers.com/'>@FuerteDevelopers | 5K videos</a>
                </div>
             </div>
         </div>

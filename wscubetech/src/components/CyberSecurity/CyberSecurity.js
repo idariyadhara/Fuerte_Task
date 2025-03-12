@@ -50,8 +50,8 @@ const CyberSecuritycourses = [
     }
 ]
 const cyberSecurityReviews = [
-    { id: 1, data: "I would like to thank the mentor and WsCube Tech for the enhanced training provided during the entire course. The mentor has brilliant knowledge. The course content covers beginner to pro. Also, sir is a good motivator and friendly person. ", name: "Gautam Mayekar" },
-    { id: 2, data: "I’m thankful for the extra time provided by the institute as I had to take leaves because of illness. Sir had put extra time and effort for me and some other learners who needed more time in learning. This is what makes WsCube tech the best institute for ethical hacking and penetration testing.", name: "Bharat Kumar" },
+    { id: 1, data: "I would like to thank the mentor and Fuerte Developers for the enhanced training provided during the entire course. The mentor has brilliant knowledge. The course content covers beginner to pro. Also, sir is a good motivator and friendly person. ", name: "Gautam Mayekar" },
+    { id: 2, data: "I’m thankful for the extra time provided by the institute as I had to take leaves because of illness. Sir had put extra time and effort for me and some other learners who needed more time in learning. This is what makes Fuerte Developers the best institute for ethical hacking and penetration testing.", name: "Bharat Kumar" },
     { id: 3, data: "If anybody wants to learn the advanced techniques of hacking and penetration testing, then I don’t think there is any other course better than this. Our classes were conducted regularly on Zoom and were very interactive. It was a small batch and learning was effective. Thanks!", name: "Rituraj Sharma" },
     { id: 4, data: "You can feel the difference in the way sir teaches and clears the concepts. I had seen it in the way he had explained in some YouTube videos. That is why I chose to go for the full course. The mentor considers your level of understanding while teaching. I used to ask a lot of questions during classes and found answers always on time. ", name: "Shugandha Sharma" },
 ];

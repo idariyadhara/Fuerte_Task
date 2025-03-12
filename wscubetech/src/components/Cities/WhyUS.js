@@ -12,7 +12,7 @@ const reasons = [
 const WhyUS = () => {
     return (
         <div className='whyus-container'>
-            <h1>Why choose WsCubeTech Campus?</h1>
+            <h1>Why choose Fuerte Developers Campus?</h1>
             <div className='campus-reason-data'>
                 {reasons.map((reason, index) => (
                     <div className='reason-for-campus' key={index}>

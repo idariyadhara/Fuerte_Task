@@ -64,11 +64,27 @@
 }
 
 .dropdown-menu li {
-    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Pushes arrow to the right */
+    align-items: center;
+    text-decoration: none;
+    width: 150px;
+    padding:10px 20px;
 }
-.dropdown-menu li a {
-    text-decoration: none; /* Removes underline */
+.dropdown-menu a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
     color: black;
+}
+.arrow-icon {
+    flex-shrink: 0;  /* Prevents shrinking */
+    margin-left: auto;  /* Pushes arrow to the extreme right */
+    font-size: 16px; /* Adjust size */
+    color: transparent;
+}
+.dropdown-menu li:hover .arrow-icon {
+    color: white; /* Show arrow on hover */
 }
 .dropdown-menu li a:hover{
     color: white;
@@ -80,9 +96,13 @@
 }
 .dropdown-menu li:hover{
     background-color: rgb(50, 50, 248);
-    border-radius: 10px;
+    border-radius: 5px;
     color: white;
+    margin: 5px;
 } 
+#career-dropdown{
+    margin-left: 170px;
+}
 
 /* 🔹 Sidebar (Hidden by Default) */
 .sidebar {
@@ -156,14 +176,22 @@
 .sidebar-dropdown-menu.right-align a{
     color: #222;
 }
+.sidebar-dropdown-menu a {
+    text-decoration: none;
+    display: block;
+    width: 80%;
+}
 /* 🔹 Dropdown Items */
 .sidebar-dropdown-menu li {
-    padding: 8px;
+    padding: 5px;
 }
 
 .sidebar-dropdown-menu li:hover {
     background: blue;
     color: white;
+}
+#career-sidebar{
+  top:170px;
 }
 
 /* 🔹 Menu Icon (Visible in Small Screens) */

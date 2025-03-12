@@ -13,8 +13,8 @@ const CareerCenter = () => {
     return (
         <div className='ca-center-container'>
             <div className='jaipur-center'>
-                <h1>WsCube Tech Jaipur Center</h1>
-                <p>1st Floor, Plot no. 21, Manav Ashram Colony, Vasundhara Colony, Gopal Pura Mode, Jaipur - Rajasthan - India (302018)</p>
+                <h1>Fuerte Developers Rajkot Center</h1>
+                <p>405 - The Spire, 150 Feet Ring Rd, Rajkot, Gujarat 360007</p>
                 <button>Get Direction</button>
                 <p><a href='https://mail.google.com/' target='contact@fuertedevelopers.com'>contact@fuertedevelopers.com</a></p>
                 <div style={{display: "flex", gap: "10px" }}>

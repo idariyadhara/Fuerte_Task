@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import './InquiryForm.css';
 
 const countries = [
@@ -14,16 +15,25 @@ const InquiryForm = ({ heading, buttonText }) => {
     const [selectedCountry, setSelectedCountry] = useState(countries[0]); // Default: India
     const [phoneNumber, setPhoneNumber] = useState('');
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
 
     const openModal = () => {
         setIsOpen(true);
         document.body.classList.add("no-scroll");
     }
-
+    // const closeModal = () => {
+    //     setIsOpen(false);
+    //     document.body.classList.remove("no-scroll"); // Re-enable scrolling
+    // };
     const closeModal = () => {
         setIsOpen(false);
         document.body.classList.remove("no-scroll"); // Re-enable scrolling
     };
+
+    useEffect(() => {
+        document.body.classList.remove("no-scroll"); // Ensure scroll is enabled on route change
+    }, [location.pathname]);
+
 
     return (
         <>

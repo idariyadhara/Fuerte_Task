@@ -5,22 +5,22 @@ import 'swiper/css';
 const Mentor = () => {
 
     const images = [
-        { id: 1, src: require('../../assets/images/mentor1.jpeg'), alt: "Ayushi Jain"},
-        { id: 2, src: require('../../assets/images/mentor2.jpeg'), alt: "Bhagirath Giri"},
-        { id: 3, src: require('../../assets/images/mentor3.jpeg'), alt: "Ashish Kumar"},
-        { id: 4, src: require('../../assets/images/mentor4.jpeg'), alt: "Bhawani Singh"},
-        { id: 5, src: require('../../assets/images/mentor5.jpeg'), alt: "Virendra Singh Rathore"},
-        { id: 6, src: require('../../assets/images/mentor6.jpeg'), alt: "Pallavi Chandra"},
-        { id: 7, src: require('../../assets/images/mentor7.jpeg'), alt: "Pawan Kumar"},
-        { id: 8, src: require('../../assets/images/mentor8.jpeg'), alt: "Tushar Jha"},
-        { id: 9, src: require('../../assets/images/mentor9.jpeg'), alt: "Pradeep Kumar"},
-        { id: 10, src: require('../../assets/images/mentor10.jpeg'), alt: "Naveen Verma"},
-        { id: 11, src: require('../../assets/images/mentor11.jpeg'), alt: "Sujal Dave"},
-        { id: 12, src: require('../../assets/images/mentor12.jpeg'), alt: "Sultan Khan"},
-        { id: 13, src: require('../../assets/images/mentor13.jpeg'), alt: "Bhawika Kumawat"},
-        { id: 14, src: require('../../assets/images/mentor14.jpeg'), alt: "Neetiraj Singh"},
-        { id: 15, src: require('../../assets/images/mentor15.jpeg'), alt: "Pradeep Rai"},
-        { id: 16, src: require('../../assets/images/mentor16.jpeg'), alt: "Himanshu Tiwari"},
+        { id: 1, src: require('../../assets/images/zeeshan.jpeg'), alt: "Zeeshan Khan"},
+        { id: 2, src: require('../../assets/images/poojamam.jpeg'), alt: "Pooja Gangwani"},
+        { id: 3, src: require('../../assets/images/abhishek.jpeg'), alt: "Abhishek Kumar"},
+        { id: 4, src: require('../../assets/images/mohit.jpeg'), alt: "Mohit Ahuja"},
+        { id: 5, src: require('../../assets/images/aprakash.jpg'), alt: "Aditya Prakash "},
+        { id: 6, src: require('../../assets/images/zeeshan.jpeg'), alt: "Zeeshan Khan"},
+        { id: 7, src: require('../../assets/images/poojamam.jpeg'), alt: "Pooja Gangwani"},
+        { id: 8, src: require('../../assets/images/abhishek.jpeg'), alt: "Abhishek Kumar"},
+        { id: 9, src: require('../../assets/images/mohit.jpeg'), alt: "Mohit Ahuja"},
+        { id: 10, src: require('../../assets/images/aprakash.jpg'), alt: "Aditya Prakash"},
+        { id: 11, src: require('../../assets/images/zeeshan.jpeg'), alt: "Zeeshan Khan"},
+        { id: 12, src: require('../../assets/images/poojamam.jpeg'), alt: "Pooja Gangwani"},
+        { id: 13, src: require('../../assets/images/abhishek.jpeg'), alt: "Abhisek Kumar"},
+        { id: 14, src: require('../../assets/images/mohit.jpeg'), alt: "Mohit Ahuja"},
+        { id: 15, src: require('../../assets/images/aprakash.jpg'), alt: "Aditya Prakash"},
+        { id: 16, src: require('../../assets/images/zeeshan.jpeg'), alt: "Zeeshan Khan"},
     ];
 
     return (

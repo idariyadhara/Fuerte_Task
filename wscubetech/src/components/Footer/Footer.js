@@ -10,16 +10,16 @@ const Footer = () => {
                     <p>Elevate Your Learning Journey with Cutting-Edge Education Technology.</p>
                     {/* Social Media Icons */}
                     <div className="social-media-links">
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/fuertedevelopers/" target="_blank" rel="noopener noreferrer">
                             <FaFacebookF className="social-icon" />
                         </a>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/fuerte_developers/?hl=en" target="_blank" rel="noopener noreferrer">
                             <FaInstagram className="social-icon" />
                         </a>
                         <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                             <FaTwitter className="social-icon" />
                         </a>
-                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://in.linkedin.com/company/fuertedevelopers" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin className="social-icon" />
                         </a>
                     </div>
@@ -37,12 +37,11 @@ const Footer = () => {
                 <div class="footer-section">
                     <h4>Our Programs</h4>
                     <ul>
-                        <li><a href="#data-analysis">Data Analysis</a></li>
-                        <li><a href="#digital-marketing">Digital Marketing</a></li>
-                        <li><a href="#web-development">Web Development</a></li>
-                        <li><a href="#cyber-security">Cyber Security</a></li>
-                        <li><a href="#app-development">App Development</a></li>
-                        <li><a href="#design">Design</a></li>
+                        <li><a href="/data-analytics">Data Analysis</a></li>
+                        <li><a href="/digital-marketing">Digital Marketing</a></li>
+                        <li><a href="/web-development">Web Development</a></li>
+                        <li><a href="/cyber-security">Cyber Security</a></li>
+                        <li><a href="/app-development">App Development</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

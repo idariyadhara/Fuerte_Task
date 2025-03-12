@@ -5,10 +5,11 @@
 }
 
 #mentor-icon {
-    width: 170px;
-    padding: 2px;
+    width: 200px;
+    padding: 10px;
     background-color: orange;
     border-radius: 20px;
+    color: #000;
 }
 
 .mentor_container p span {

@@ -1,26 +1,3 @@
-// import './Gallery.css';
-
-// const Gallery = () => {
-//     return (
-//         <div className='gallery-container'>
-//             <div className='gallery-container-data'>
-//                 <h1>Campus Gallery</h1>
-//                 <p>Bridging Knowledge and Technology to Shape Brighter Futures.</p>
-//             </div>
-//             <div>
-//                 <img src={require('../../assets/images/mentor1.jpeg')} alt='Company' />
-//                 <img src={require('../../assets/images/mentor1.jpeg')} alt='Company' />
-//                 <img src={require('../../assets/images/mentor1.jpeg')} alt='Company' />
-//                 <img src={require('../../assets/images/mentor1.jpeg')} alt='Company' />
-//                 <img src={require('../../assets/images/mentor1.jpeg')} alt='Company' />
-//                 <img src={require('../../assets/images/mentor1.jpeg')} alt='Company' />  
-//                 <img src={require('../../assets/images/mentor1.jpeg')} alt='Company' />
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default Gallery;
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';

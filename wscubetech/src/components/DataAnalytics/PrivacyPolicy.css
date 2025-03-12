@@ -3,3 +3,9 @@
     margin: auto;
     text-align: left;
 }
+.our-policy p{
+    margin-top: 0px;
+}
+.our-policy ul li{
+    margin-top: 20px;
+}

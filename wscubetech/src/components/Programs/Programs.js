@@ -19,7 +19,7 @@ const programData = {
     "Digital Marketing": {
         image: require('../../assets/images/digital_marketing.png'),
         title: "Digital Marketing Mentorship Program",
-        subtitle: "Join the best online digital marketing course in India by WsCube Tech. Become a digital marketer with our comprehensive program to elevate your career to reach new professional heights and excel in today's competitive landscape in 24 weeks.",
+        subtitle: "Join the best online digital marketing course in India by Fuerte Developers. Become a digital marketer with our comprehensive program to elevate your career to reach new professional heights and excel in today's competitive landscape in 24 weeks.",
         rating: 4.9,
         ratingStar: require('../../assets/images/rating.png'),
         ratingNumber: '19,476',
@@ -68,7 +68,7 @@ const programData = {
     "App Development":{
         image: require('../../assets/images/App_development.png'),
         title: "Online Flutter App Development Course",
-        subtitle: "Learn Flutter from scratch and build a promising career with WsCube Tech’s online Flutter course. Get mentorship from experienced Flutter developers, with regular LIVE classes, hands-on projects, certification, and placement assistance.",
+        subtitle: "Learn Flutter from scratch and build a promising career with Fuerte Developers’s online Flutter course. Get mentorship from experienced Flutter developers, with regular LIVE classes, hands-on projects, certification, and placement assistance.",
         rating: 4.9,
         ratingStar: require('../../assets/images/rating.png'),
         ratingNumber: '4,902',
@@ -81,7 +81,7 @@ const programData = {
     "Design":{
         image: require('../../assets/images/design.png'),
         title: "Online Graphic Designing Course",
-        subtitle: "Join the best online graphic design course and learn the basic to advanced concepts of designing appealing graphics and visual content. With WsCube Tech, you get to learn from industry leaders who have been training aspirants for years. ",
+        subtitle: "Join the best online graphic design course and learn the basic to advanced concepts of designing appealing graphics and visual content. With Fuerte Developers, you get to learn from industry leaders who have been training aspirants for years. ",
         rating: 5,
         ratingStar: require('../../assets/images/rating.png'),
         ratingNumber: '11,532',

@@ -23,7 +23,7 @@ const LearnerReview = () => {
     return (
         <div className='Learner-data'>
             <h1>Hear it From Our Learners <strong>Testimonials</strong></h1>
-            <p>WsCube Tech Alumni Stories, You can’t afford to miss.</p>
+            <p>Fuerte Developers Alumni Stories, You can’t afford to miss.</p>
             <div className='video-review'>
                 {videos.map((video, index) => (
                     <div

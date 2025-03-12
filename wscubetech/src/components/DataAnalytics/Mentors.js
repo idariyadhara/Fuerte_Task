@@ -5,41 +5,35 @@ const Mentors=()=>{
 
     const mentorsData = [
         {
-            "name": "Tushar Jha",
+            "name": "Zeeshan Khan",
+            "position": "Full Stack Developer",
+            "image": require("../../assets/images/zeeshan.jpeg"),
+            "companyLogo": require("../../assets/images/fuerte_logo.png")
+        },
+        {
+            "name": "Pooja Gangwani",
+            "position": "Digital Marketing",
+            "image": require("../../assets/images/poojamam.jpeg"),
+            "companyLogo": require("../../assets/images/fuerte_logo.png")
+        },
+        {
+            "name": "Aditya Praksh",
+            "position": "Founder and CEO",
+            "image": require("../../assets/images/aprakash.jpg"),
+            "companyLogo": require("../../assets/images/fuerte_logo.png")
+        },
+        {
+            "name": "Mohit Ahuja",
             "position": "Sr. Data Analyst",
-            "image": require("../../assets/images/mentor1.jpeg"),
-            "companyLogo": require("../../assets/images/wscube-tech-logo-2.png")
+            "image": require("../../assets/images/mohit.jpeg"),
+            "companyLogo": require("../../assets/images/fuerte_logo.png")
         },
         {
-            "name": "Amit Sharma",
+            "name": "Ahishek Kumar ",
             "position": "Lead Software Engineer",
-            "image": require("../../assets/images/mentor2.jpeg"),
-            "companyLogo": require("../../assets/images/wscube-tech-logo-2.png")
+            "image": require("../../assets/images/abhishek.jpeg"),
+            "companyLogo": require("../../assets/images/fuerte_logo.png")
         },
-        {
-            "name": "Ritika Singh",
-            "position": "AI Researcher",
-            "image": require("../../assets/images/mentor3.jpeg"),
-            "companyLogo": require("../../assets/images/wscube-tech-logo-2.png")
-        },
-        {
-            "name": "Tushar Jha",
-            "position": "Sr. Data Analyst",
-            "image": require("../../assets/images/mentor1.jpeg"),
-            "companyLogo": require("../../assets/images/wscube-tech-logo-2.png")
-        },
-        {
-            "name": "Amit Sharma",
-            "position": "Lead Software Engineer",
-            "image": require("../../assets/images/mentor2.jpeg"),
-            "companyLogo": require("../../assets/images/wscube-tech-logo-2.png")
-        },
-        {
-            "name": "Ritika Singh",
-            "position": "AI Researcher",
-            "image": require("../../assets/images/mentor3.jpeg"),
-            "companyLogo": require("../../assets/images/wscube-tech-logo-2.png")
-        }
     ];
 
     const scrollRef = useRef(null);

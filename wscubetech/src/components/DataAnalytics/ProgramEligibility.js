@@ -3,14 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
 const eligibilityData = [
-    { id: 1, title: "Tech Enthusiasts", image: require("../../assets/images/mentor1.jpeg") },
-    { id: 2, title: "Beginners in Data Analytics", image: require("../../assets/images/mentor1.jpeg") },
-    { id: 3, title: "Working Professionals", image: require("../../assets/images/mentor1.jpeg") },
-    { id: 4, title: "Career Switchers", image: require("../../assets/images/mentor1.jpeg") },
-    { id: 5, title: "Tech Enthusiasts", image: require("../../assets/images/mentor1.jpeg") },
-    { id: 6, title: "Beginners in Data Analytics", image: require("../../assets/images/mentor1.jpeg") },
-    { id: 7, title: "Working Professionals", image: require("../../assets/images/mentor1.jpeg") },
-    { id: 8, title: "Career Switchers", image: require("../../assets/images/mentor1.jpeg") }
+    { id: 1, title: "Tech Enthusiasts", image: require("../../assets/images/Tech Enthusiasts.png") },
+    { id: 2, title: "Beginners in Data Analytics", image: require("../../assets/images/Beginners in Data Analytics.png") },
+    { id: 3, title: "Working Professionals", image: require("../../assets/images/Working Professionals.png") },
+    { id: 4, title: "Career Switchers", image: require("../../assets/images/Career Switchers.jpeg") },
+    { id: 5, title: "Career Transitioners", image: require("../../assets/images/Career Transitioners.png") },
+    { id: 6, title: "Beginners in Data Analytics", image: require("../../assets/images/Beginners in Data Analytics.png") },
+    { id: 7, title: "Working Professionals", image: require("../../assets/images/Working Professionals.png") },
+    { id: 8, title: "Career Switchers", image: require("../../assets/images/Career Switchers.jpeg") }
 ];
 
 

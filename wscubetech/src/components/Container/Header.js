@@ -3,6 +3,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import './Header.css';
 import logo from '../../assets/images/fuerte.png';
 import { Link } from "react-router-dom";
+import { LiaArrowRightSolid } from "react-icons/lia";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -72,17 +73,53 @@ const Header = () => {
 
                         {isOpen && (
                             <ul className="dropdown-menu">
-                                <li><Link to="/data-analytics" onClick={closeDropdowns}>Data Analytics</Link></li>
-                                <li><Link to="/digital-marketing" onClick={closeDropdowns}>Digital Marketing</Link></li>
-                                <li><Link to="/web-development" onClick={closeDropdowns}>Web Development</Link></li>
-                                <li><Link to="/cyber-security" onClick={closeDropdowns}>Cyber Security</Link></li>
-                                <li><Link to="/app-development" onClick={closeDropdowns}>App Development</Link></li>
+                                <Link to="/data-analytics" onClick={closeDropdowns}>
+                                    <li>
+                                        Data Analytics
+                                        <LiaArrowRightSolid className="arrow-icon" />
+                                    </li>
+                                </Link>
+                                <Link to="/digital-marketing" onClick={closeDropdowns}>
+                                    <li>
+                                        Digital Marketing
+                                        <LiaArrowRightSolid className="arrow-icon" />
+                                    </li>
+                                </Link>
+                                <Link to="/web-development" onClick={closeDropdowns}>
+                                    <li>
+                                        Web Development
+                                        <LiaArrowRightSolid className="arrow-icon" />
+                                    </li>
+                                </Link>
+                                <Link to="/cyber-security" onClick={closeDropdowns}>
+                                    <li>
+                                        Cyber Security
+                                        <LiaArrowRightSolid className="arrow-icon" />
+                                    </li>
+                                </Link>
+                                <Link to="/app-development" onClick={closeDropdowns}>
+                                    <li>
+                                        App Development
+                                        <LiaArrowRightSolid className="arrow-icon" />
+                                    </li>
+                                </Link>
                             </ul>
+
                         )}
                         {isCareer && (
-                            <ul className="dropdown-menu">
-                                <li><Link to="/jaipur" onClick={closeDropdowns}>Jaipur</Link></li>
-                                <li><Link to="/jodhpur" onClick={closeDropdowns}>Jodhpur</Link></li>
+                            <ul className="dropdown-menu" id="career-dropdown">
+                                <Link to="/gurgaon" onClick={closeDropdowns}>
+                                    <li>
+                                    Gurgaon
+                                        <LiaArrowRightSolid className="arrow-icon" />
+                                    </li>
+                                </Link>
+                                <Link to="/rajkot" onClick={closeDropdowns}>
+                                    <li>
+                                        Rajkot
+                                        <LiaArrowRightSolid className="arrow-icon" />
+                                    </li>
+                                </Link>
                             </ul>
                         )}
                     </div>
@@ -112,11 +149,21 @@ const Header = () => {
                     </button>
                     {isOpen && (
                         <ul className="sidebar-dropdown-menu right-align">
-                            <li><Link to="/data-analytics" onClick={toggleSidebar}>Data Analytics</Link></li>
-                            <li><Link to="/digital-marketing" onClick={toggleSidebar}>Digital Marketing</Link></li>
-                            <li><Link to="/web-development" onClick={toggleSidebar}>Web Development</Link></li>
-                            <li><Link to="/cyber-security" onClick={toggleSidebar}>Cyber Security</Link></li>
-                            <li><Link to="/app-development" onClick={toggleSidebar}>App Development</Link></li>
+                            <Link to="/data-analytics" onClick={toggleSidebar}>
+                                <li>Data Analytics</li>
+                            </Link>
+                            <Link to="/digital-marketing" onClick={toggleSidebar}>
+                                <li>Digital Marketing</li>
+                            </Link>
+                            <Link to="/web-development" onClick={toggleSidebar}>
+                                <li>Web Development</li>
+                            </Link>
+                            <Link to="/cyber-security" onClick={toggleSidebar}>
+                                <li>Cyber Security</li>
+                            </Link>
+                            <Link to="/app-development" onClick={toggleSidebar}>
+                                <li>App Development</li>
+                            </Link>
                         </ul>
                     )}
 
@@ -124,9 +171,13 @@ const Header = () => {
                         Career School ⬇
                     </button>
                     {isCareer && (
-                        <ul className="sidebar-dropdown-menu right-align">
-                            <li><Link to="/jaipur" onClick={toggleSidebar}>Jaipur</Link></li>
-                            <li><Link to="/jodhpur" onClick={toggleSidebar}>Jodhpur</Link></li>
+                        <ul className="sidebar-dropdown-menu right-align" id="career-sidebar">
+                            <Link to="/gurgaon" onClick={toggleSidebar}>
+                                <li>Gurgaon</li>
+                            </Link>
+                            <Link to="/rajkot" onClick={toggleSidebar}>
+                                <li>Rajkot</li>
+                            </Link>
                         </ul>
                     )}
                 </div>

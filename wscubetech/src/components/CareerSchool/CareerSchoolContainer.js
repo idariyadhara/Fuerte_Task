@@ -14,14 +14,14 @@ const CareerSchoolContainer = () => {
                     </div>
                     <div className="career-cities">
                         <div className="career-city">
-                            <img src={require("../../assets/images/Jaipur.png")} alt="Jaipur" />
-                            <h1>Jaipur</h1>
-                            <p>Rajasthan</p>
+                            <img src={require("../../assets/images/gurgaon.jpg")} alt="Jaipur" />
+                            <h1>Gurgaon</h1>
+                            <p>Haryana</p>
                         </div>
                         <div className="career-city">
-                            <img src={require("../../assets/images/Jodhpur.png")} alt="Jodhpur" />
-                            <h1>Jodhpur</h1>
-                            <p>Rajasthan</p>
+                            <img src={require("../../assets/images/rajkot.jpg")} alt="Jodhpur" />
+                            <h1>Rajkot</h1>
+                            <p>Gujarat</p>
                         </div>
                         <div className="career-city">
                             <img src={require("../../assets/images/coming-center.png")} alt="Coming Soon" />

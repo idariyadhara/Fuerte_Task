@@ -182,15 +182,15 @@ const WebDevelopmentReviews = [
         name: "Ritesh Verma."
     },
     {
-        text: "Coming from a non-tech background, I was initially confused whether to learn web development. But the online Full Stack Developer training at WsCube Tech removed all my confusion and doubts. Now, I'm a Full Stack Developer, and I've proven that anyone can transition into this exciting field.",
+        text: "Coming from a non-tech background, I was initially confused whether to learn web development. But the online Full Stack Developer training at Fuerte Developers removed all my confusion and doubts. Now, I'm a Full Stack Developer, and I've proven that anyone can transition into this exciting field.",
         name: "Suresh Sharma."
     },
     {
-        text: "Changing careers was a big step, and I needed the right guidance. WsCube Tech provided that and more. It's more than just a course; it's a career transformation. The real-world projects, job placement assistance, and the welcoming community made my journey smooth and fulfilling.",
+        text: "Changing careers was a big step, and I needed the right guidance. Fuerte Developers provided that and more. It's more than just a course; it's a career transformation. The real-world projects, job placement assistance, and the welcoming community made my journey smooth and fulfilling.",
         name: "Jyotsana Jadoun."
     },
     {
-        text: "The full stack developer course by WsCube Tech has helped me get my first job. The full support and projects made all the difference. Today, I&apos;m proud to say I&apos;ve landed my dream job, and I couldn&apos;t have done it without this training.",
+        text: "The full stack developer course by Fuerte Developers has helped me get my first job. The full support and projects made all the difference. Today, I&apos;m proud to say I&apos;ve landed my dream job, and I couldn&apos;t have done it without this training.",
         name: "Vikrant Singh."
     }
 ];
@@ -331,9 +331,9 @@ const WebDevelopment = () => {
                 description={[
                     "Our Full Stack Developer Course offers an extensive curriculum that covers everything you need to become a proficient web developer. We'll equip you with the skills and knowledge to create dynamic, cutting-edge websites and web apps from start to finish.",
                     "As a learner of our online Full Stack Development Course, you'll unlock lucrative career opportunities. The demand for Full Stack developers is skyrocketing, and businesses worldwide are actively seeking professionals with the expertise to design and build interactive, user-friendly websites and applications.",
-                    "At WsCube Tech, we believe in learning by doing. That's why our course includes six months of live, hands-on training to ensure you're job-ready. You won't be alone on this journey. Our experienced mentors are there to guide you at every step, offering invaluable insights and personalized assistance.",
+                    "At Fuerte Developers, we believe in learning by doing. That's why our course includes six months of live, hands-on training to ensure you're job-ready. You won't be alone on this journey. Our experienced mentors are there to guide you at every step, offering invaluable insights and personalized assistance.",
                     "You’ll become a master at HTML, CSS, HTML5, CSS3, Bootstrap, Tailwind CSS, ReactJS, JavaScript, MongoDB, NodeJS, and ExpressJS.",
-                    "You'll work on over 10 real-world projects, building a robust portfolio to showcase your skills to potential employers. Upon completing the full stack development course, you'll receive a recognized certification from WsCube Tech, validating your proficiency as a Full Stack Developer.",
+                    "You'll work on over 10 real-world projects, building a robust portfolio to showcase your skills to potential employers. Upon completing the full stack development course, you'll receive a recognized certification from Fuerte Developers, validating your proficiency as a Full Stack Developer.",
                     "Whether you are a fresher or a working professional, we have designed an extensive curriculum to fit different learning goals. This training program will introduce you to the front-end, back-end, and middleware development technologies.",
                     "Hence, don't miss out on the opportunity to jumpstart your career in web development with the best online Full Stack Developer Course. Book your demo class now and take the first step towards a successful and prosperous future."
                 ]}
